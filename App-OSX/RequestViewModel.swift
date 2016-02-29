@@ -35,7 +35,16 @@ public final class RequestViewModel {
                     let host = $0?.host else {
                         return nil
                 }
+                var port: String = ""
+                if let string = $0?.port {
+                    port = "\(string)"
+                }
+
                 CurrentAPIHost = scheme + "://" + host
+                if !port.isEmpty {
+                    CurrentAPIHost += ":\(port)"
+                }
+
                 var parameters: [String:AnyObject]? = nil
                 if let queryItems = ($0?.queryItems?.filter { $0.value != nil }) {
                     parameters = [:]
