@@ -2,6 +2,14 @@
 
 `Shelley` is most likely an **anti-pattern** of the network layer its built atop of, `ReactiveMoya`. It's a single `TargetType` for JSON requests.
 
+#### Dependencies
+
+You will need to use `Carthage` to build dependencies.
+
+```bash
+$ carthage bootstrap
+```
+
 #### Example
 
 To make a JSON request, use `JSONRequest`. Here's an example:
