@@ -17,6 +17,8 @@ JSONRequest("users")
 }
 ```
 
+<hr/>
+
 ##### JSONRequest
 
 `JSONRequest` is a function which generates `JSONTarget<T>`.
