@@ -4,7 +4,7 @@
 
 #### Example
 
-To make a JSON request, use `JSONRequest`, for instance:
+To make a JSON request, use `JSONRequest`. Here's an example:
 
 ```swift
 // Edit the `baseURL`
