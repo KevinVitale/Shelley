@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A76585A1C83A0F700196FAF /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7658591C83A0F700196FAF /* ResultController.swift */; };
+		0A9DED7D1C8365A40078BC9A /* Shelley.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9DED7C1C8365A40078BC9A /* Shelley.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9DED7E1C8365A40078BC9A /* Shelley.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9DED7C1C8365A40078BC9A /* Shelley.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9DED881C83673F0078BC9A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DED871C83673F0078BC9A /* Network.swift */; };
+		0A9DED891C83673F0078BC9A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DED871C83673F0078BC9A /* Network.swift */; };
+		0A9DED8F1C8368960078BC9A /* JSONEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DED8E1C8368960078BC9A /* JSONEndpoint.swift */; };
+		0A9DED901C8368960078BC9A /* JSONEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DED8E1C8368960078BC9A /* JSONEndpoint.swift */; };
+		0A9DED921C8368BB0078BC9A /* EndpointPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DED911C8368BB0078BC9A /* EndpointPath.swift */; };
+		0A9DED931C8368BB0078BC9A /* EndpointPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DED911C8368BB0078BC9A /* EndpointPath.swift */; };
+		0A9DED951C83693A0078BC9A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DED941C83693A0078BC9A /* APIManager.swift */; };
+		0A9DED961C83693A0078BC9A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DED941C83693A0078BC9A /* APIManager.swift */; };
+		0A9DED981C8369A50078BC9A /* JSONTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DED971C8369A50078BC9A /* JSONTarget.swift */; };
+		0A9DED991C8369A50078BC9A /* JSONTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DED971C8369A50078BC9A /* JSONTarget.swift */; };
+		0A9DEDBD1C8378610078BC9A /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9DEDBC1C8378610078BC9A /* ReactiveMoya.framework */; };
+		0A9DEDC81C8379490078BC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DEDC71C8379490078BC9A /* AppDelegate.swift */; };
+		0A9DEDCA1C8379490078BC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DEDC91C8379490078BC9A /* Assets.xcassets */; };
+		0A9DEDCD1C8379490078BC9A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DEDCB1C8379490078BC9A /* MainMenu.xib */; };
+		0A9DEDD21C8379540078BC9A /* Shelley.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9DED661C8363E80078BC9A /* Shelley.framework */; };
+		0A9DEDDD1C837B5C0078BC9A /* Shelley.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9DED661C8363E80078BC9A /* Shelley.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A9DEDDE1C837B6E0078BC9A /* ReactiveMoya.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9DEDBC1C8378610078BC9A /* ReactiveMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A9DEDDF1C837B7A0078BC9A /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9DEDD41C8379BC0078BC9A /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A9DEDE01C837B7C0078BC9A /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9DEDD51C8379BC0078BC9A /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A9DEDE11C837B7E0078BC9A /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9DEDD91C837AF90078BC9A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A9DEDE51C8380C80078BC9A /* RequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DEDE41C8380C80078BC9A /* RequestViewModel.swift */; };
+		0A9DEDE81C83813C0078BC9A /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DEDE71C83813C0078BC9A /* RequestViewController.swift */; };
+		0A9DEDEA1C8384790078BC9A /* RequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DEDE91C8384790078BC9A /* RequestViewController.xib */; };
+		0A9DEDEC1C8385790078BC9A /* RXExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DEDEB1C8385790078BC9A /* RXExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A9DEDD31C8379A40078BC9A /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A9DEDE11C837B7E0078BC9A /* Alamofire.framework in Copy Frameworks */,
+				0A9DEDE01C837B7C0078BC9A /* Result.framework in Copy Frameworks */,
+				0A9DEDDF1C837B7A0078BC9A /* ReactiveCocoa.framework in Copy Frameworks */,
+				0A9DEDDE1C837B6E0078BC9A /* ReactiveMoya.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9DEDDC1C837B530078BC9A /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A9DEDDD1C837B5C0078BC9A /* Shelley.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A7658591C83A0F700196FAF /* ResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
+		0A9DED661C8363E80078BC9A /* Shelley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shelley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9DED741C8365580078BC9A /* Shelley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shelley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9DED7C1C8365A40078BC9A /* Shelley.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shelley.h; sourceTree = "<group>"; };
+		0A9DED871C83673F0078BC9A /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		0A9DED8E1C8368960078BC9A /* JSONEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEndpoint.swift; sourceTree = "<group>"; };
+		0A9DED911C8368BB0078BC9A /* EndpointPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointPath.swift; sourceTree = "<group>"; };
+		0A9DED941C83693A0078BC9A /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0A9DED971C8369A50078BC9A /* JSONTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONTarget.swift; sourceTree = "<group>"; };
+		0A9DEDBC1C8378610078BC9A /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/Mac/ReactiveMoya.framework; sourceTree = "<group>"; };
+		0A9DEDC51C8379490078BC9A /* App-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9DEDC71C8379490078BC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A9DEDC91C8379490078BC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A9DEDCC1C8379490078BC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0A9DEDCE1C8379490078BC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9DEDD41C8379BC0078BC9A /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		0A9DEDD51C8379BC0078BC9A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		0A9DEDD91C837AF90078BC9A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		0A9DEDE41C8380C80078BC9A /* RequestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewModel.swift; sourceTree = "<group>"; };
+		0A9DEDE71C83813C0078BC9A /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		0A9DEDE91C8384790078BC9A /* RequestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestViewController.xib; sourceTree = "<group>"; };
+		0A9DEDEB1C8385790078BC9A /* RXExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A9DED621C8363E80078BC9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9DEDBD1C8378610078BC9A /* ReactiveMoya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9DED701C8365580078BC9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9DEDC21C8379490078BC9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9DEDD21C8379540078BC9A /* Shelley.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A9DED591C8363000078BC9A = {
+			isa = PBXGroup;
+			children = (
+				0A9DED7C1C8365A40078BC9A /* Shelley.h */,
+				0A9DED7F1C8365E10078BC9A /* Shelley */,
+				0A9DEDC61C8379490078BC9A /* App-OSX */,
+				0A9DED821C83669B0078BC9A /* Frameworks */,
+				0A9DED671C8363E80078BC9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A9DED671C8363E80078BC9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A9DED661C8363E80078BC9A /* Shelley.framework */,
+				0A9DED741C8365580078BC9A /* Shelley.framework */,
+				0A9DEDC51C8379490078BC9A /* App-OSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A9DED7F1C8365E10078BC9A /* Shelley */ = {
+			isa = PBXGroup;
+			children = (
+				0A9DEDED1C83898E0078BC9A /* List View Model */,
+				0A9DED861C8367330078BC9A /* Network */,
+			);
+			path = Shelley;
+			sourceTree = "<group>";
+		};
+		0A9DED821C83669B0078BC9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A9DED8C1C83683A0078BC9A /* OS X */,
+				0A9DED831C8366A40078BC9A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A9DED831C8366A40078BC9A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		0A9DED861C8367330078BC9A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0A9DED871C83673F0078BC9A /* Network.swift */,
+				0A9DED941C83693A0078BC9A /* APIManager.swift */,
+				0A9DED911C8368BB0078BC9A /* EndpointPath.swift */,
+				0A9DED8E1C8368960078BC9A /* JSONEndpoint.swift */,
+				0A9DED971C8369A50078BC9A /* JSONTarget.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		0A9DED8C1C83683A0078BC9A /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				0A9DEDD91C837AF90078BC9A /* Alamofire.framework */,
+				0A9DEDD41C8379BC0078BC9A /* ReactiveCocoa.framework */,
+				0A9DEDD51C8379BC0078BC9A /* Result.framework */,
+				0A9DEDBC1C8378610078BC9A /* ReactiveMoya.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		0A9DEDC61C8379490078BC9A /* App-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				0A9DEDC71C8379490078BC9A /* AppDelegate.swift */,
+				0A9DEDC91C8379490078BC9A /* Assets.xcassets */,
+				0A9DEDCB1C8379490078BC9A /* MainMenu.xib */,
+				0A9DEDCE1C8379490078BC9A /* Info.plist */,
+				0A9DEDE61C8381080078BC9A /* Request UI */,
+				0A9DEDEB1C8385790078BC9A /* RXExtensions.swift */,
+			);
+			path = "App-OSX";
+			sourceTree = "<group>";
+		};
+		0A9DEDE61C8381080078BC9A /* Request UI */ = {
+			isa = PBXGroup;
+			children = (
+				0A9DEDE41C8380C80078BC9A /* RequestViewModel.swift */,
+				0A9DEDE71C83813C0078BC9A /* RequestViewController.swift */,
+				0A9DEDE91C8384790078BC9A /* RequestViewController.xib */,
+				0A7658591C83A0F700196FAF /* ResultController.swift */,
+			);
+			name = "Request UI";
+			sourceTree = "<group>";
+		};
+		0A9DEDED1C83898E0078BC9A /* List View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "List View Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A9DED631C8363E80078BC9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9DED7D1C8365A40078BC9A /* Shelley.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9DED711C8365580078BC9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9DED7E1C8365A40078BC9A /* Shelley.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A9DED651C8363E80078BC9A /* Shelley-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9DED6C1C8363E80078BC9A /* Build configuration list for PBXNativeTarget "Shelley-OSX" */;
+			buildPhases = (
+				0A9DED611C8363E80078BC9A /* Sources */,
+				0A9DED621C8363E80078BC9A /* Frameworks */,
+				0A9DED631C8363E80078BC9A /* Headers */,
+				0A9DED641C8363E80078BC9A /* Resources */,
+				0A9DEDD31C8379A40078BC9A /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shelley-OSX";
+			productName = "Shelley-OSX";
+			productReference = 0A9DED661C8363E80078BC9A /* Shelley.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0A9DED731C8365580078BC9A /* Shelley-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9DED791C8365580078BC9A /* Build configuration list for PBXNativeTarget "Shelley-iOS" */;
+			buildPhases = (
+				0A9DED6F1C8365580078BC9A /* Sources */,
+				0A9DED701C8365580078BC9A /* Frameworks */,
+				0A9DED711C8365580078BC9A /* Headers */,
+				0A9DED721C8365580078BC9A /* Resources */,
+				0A9DED851C8367000078BC9A /* Copy Carthage Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shelley-iOS";
+			productName = "Shelley-iOS";
+			productReference = 0A9DED741C8365580078BC9A /* Shelley.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0A9DEDC41C8379490078BC9A /* App-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9DEDCF1C8379490078BC9A /* Build configuration list for PBXNativeTarget "App-OSX" */;
+			buildPhases = (
+				0A9DEDC11C8379490078BC9A /* Sources */,
+				0A9DEDC21C8379490078BC9A /* Frameworks */,
+				0A9DEDC31C8379490078BC9A /* Resources */,
+				0A9DEDDC1C837B530078BC9A /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "App-OSX";
+			productName = "App-OSX";
+			productReference = 0A9DEDC51C8379490078BC9A /* App-OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A9DED5A1C8363000078BC9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					0A9DED651C8363E80078BC9A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					0A9DED731C8365580078BC9A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					0A9DEDC41C8379490078BC9A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 0A9DED5D1C8363000078BC9A /* Build configuration list for PBXProject "Shelley" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A9DED591C8363000078BC9A;
+			productRefGroup = 0A9DED671C8363E80078BC9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A9DED651C8363E80078BC9A /* Shelley-OSX */,
+				0A9DED731C8365580078BC9A /* Shelley-iOS */,
+				0A9DEDC41C8379490078BC9A /* App-OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A9DED641C8363E80078BC9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9DED721C8365580078BC9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9DEDC31C8379490078BC9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9DEDCA1C8379490078BC9A /* Assets.xcassets in Resources */,
+				0A9DEDEA1C8384790078BC9A /* RequestViewController.xib in Resources */,
+				0A9DEDCD1C8379490078BC9A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A9DED851C8367000078BC9A /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A9DED611C8363E80078BC9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9DED951C83693A0078BC9A /* APIManager.swift in Sources */,
+				0A9DED8F1C8368960078BC9A /* JSONEndpoint.swift in Sources */,
+				0A9DED921C8368BB0078BC9A /* EndpointPath.swift in Sources */,
+				0A9DED881C83673F0078BC9A /* Network.swift in Sources */,
+				0A9DED981C8369A50078BC9A /* JSONTarget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9DED6F1C8365580078BC9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9DED961C83693A0078BC9A /* APIManager.swift in Sources */,
+				0A9DED901C8368960078BC9A /* JSONEndpoint.swift in Sources */,
+				0A9DED931C8368BB0078BC9A /* EndpointPath.swift in Sources */,
+				0A9DED891C83673F0078BC9A /* Network.swift in Sources */,
+				0A9DED991C8369A50078BC9A /* JSONTarget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9DEDC11C8379490078BC9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9DEDE51C8380C80078BC9A /* RequestViewModel.swift in Sources */,
+				0A9DEDC81C8379490078BC9A /* AppDelegate.swift in Sources */,
+				0A76585A1C83A0F700196FAF /* ResultController.swift in Sources */,
+				0A9DEDE81C83813C0078BC9A /* RequestViewController.swift in Sources */,
+				0A9DEDEC1C8385790078BC9A /* RXExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A9DEDCB1C8379490078BC9A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A9DEDCC1C8379490078BC9A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A9DED5E1C8363000078BC9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Shelley;
+			};
+			name = Debug;
+		};
+		0A9DED5F1C8363000078BC9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Shelley;
+			};
+			name = Release;
+		};
+		0A9DED6D1C8363E80078BC9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Shelley-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Shelley-OSX";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A9DED6E1C8363E80078BC9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Shelley-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Shelley-OSX";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0A9DED7A1C8365580078BC9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Shelley-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Shelley-iOS";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A9DED7B1C8365580078BC9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Shelley-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.Shelley-iOS";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0A9DEDD01C8379490078BC9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "App-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../Frameworks/Shelley.framework/Versions/Current/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.App-OSX";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A9DEDD11C8379490078BC9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "App-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../Frameworks/Shelley.framework/Versions/Current/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.App-OSX";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A9DED5D1C8363000078BC9A /* Build configuration list for PBXProject "Shelley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9DED5E1C8363000078BC9A /* Debug */,
+				0A9DED5F1C8363000078BC9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9DED6C1C8363E80078BC9A /* Build configuration list for PBXNativeTarget "Shelley-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9DED6D1C8363E80078BC9A /* Debug */,
+				0A9DED6E1C8363E80078BC9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9DED791C8365580078BC9A /* Build configuration list for PBXNativeTarget "Shelley-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9DED7A1C8365580078BC9A /* Debug */,
+				0A9DED7B1C8365580078BC9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9DEDCF1C8379490078BC9A /* Build configuration list for PBXNativeTarget "App-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9DEDD01C8379490078BC9A /* Debug */,
+				0A9DEDD11C8379490078BC9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A9DED5A1C8363000078BC9A /* Project object */;
+}
