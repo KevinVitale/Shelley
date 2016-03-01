@@ -27,6 +27,14 @@ JSONRequest("users")
 
 <hr/>
 
+### Example App
+
+The project includes an OS X application which demonstrates using `Shelley` for inspecting JSON responses on any public URL (`GET`-only, for now):
+
+![](http://cl.ly/2u2H0l2B0E3b/ShelleyApp.png)
+
+<hr/>
+
 ##### JSONRequest
 
 `JSONRequest` is a function which generates `JSONTarget<T>`.
@@ -44,9 +52,3 @@ JSONRequest("users")
 `JSONEndpoint` is an enum with a single case, `Request`. It adopts `TargetType` (from `Moya`).
 
 <hr/>
-
-### Example App
-
-The project includes an OS X application which demonstrates using `Shelley` for inspecting JSON responses on any public URL (`GET`-only, for now):
-
-![](http://cl.ly/2u2H0l2B0E3b/ShelleyApp.png)
